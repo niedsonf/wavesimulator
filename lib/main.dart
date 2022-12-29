@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_strategy/url_strategy.dart';
 import 'package:wavesimulator/controllers/adjustcontroller.dart';
 import 'package:provider/provider.dart';
 import 'package:wavesimulator/responsiveness/large_layout.dart';
@@ -11,6 +12,7 @@ import 'package:wavesimulator/responsiveness/small_layout.dart';
 import 'package:wavesimulator/style.dart';
 
 void main() {
+  setPathUrlStrategy();
   runApp(Provider(create: (_) => AdjustController(), child: WaveSimulator()));
 }
 
