@@ -1,3 +1,5 @@
+import 'dart:async';
+import 'dart:math' as math;
 import 'package:mobx/mobx.dart';
 part 'adjustcontroller.g.dart';
 
@@ -5,7 +7,7 @@ class AdjustController = AdjustControllerBase with _$AdjustController;
 
 abstract class AdjustControllerBase with Store {
   @observable
-  double amplitude = 1;
+  double amplitude = 0.5;
 
   @observable
   double frequency = 1;
